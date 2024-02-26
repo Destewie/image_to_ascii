@@ -1,4 +1,4 @@
-
+import os
 
 def get_file_format_by_header(file_path):
     with open(file_path, 'rb') as f:
@@ -23,3 +23,6 @@ def file_exists(file_path):
     except FileNotFoundError:
         return False
     return True
+
+def valid_folder(folder_path):
+    return os.path.exists(folder_path) and os.path.isdir(folder_path)
