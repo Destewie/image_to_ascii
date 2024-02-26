@@ -1,3 +1,5 @@
+
+
 def get_file_format_by_header(file_path):
     with open(file_path, 'rb') as f:
         header = f.read(4)  # Read the first 4 bytes of the file
